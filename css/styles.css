@@ -730,10 +730,19 @@ ul {
   display: flex;
   align-items: center;
   cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn:focus {
+.modal-close-btn:focus,
+.modal-close-btn:hover {
   fill: var(--accent-color);
+}
+
+.modal-wrap {
+  padding-top: 40px;
+  padding-left: 42px;
+  padding-right: 42px;
+  padding-bottom: 38px;
 }
 
 .is-hidden {
@@ -750,15 +759,15 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  padding-top: 40px;
+  /* padding-top: 40px;
   padding-left: 42px;
-  padding-right: 42px;
+  padding-right: 42px; */
   margin-bottom: 12px;
 }
 
 .modal-form {
-  padding-left: 42px;
-  padding-right: 42px;
+  /* padding-left: 42px;
+  padding-right: 42px; */
 }
 
 .form-field + .form-field {

@@ -455,13 +455,14 @@
     </footer>
 
     <!-- BACKDROP ------------------------------------->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>
                 <svg class="modal-close-icon" width="18" height="18">
                     <use href="./images/close-icon.svg#icon-close-black-18dp-2-1"></use>
                 </svg>
             </button>
+            <div class="modal-wrap">
             <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
             <form class="modal-form">
                 <div class="form-field">
@@ -512,7 +513,6 @@
                         </svg>
                     </div>
                 </div>
-
                 <div class="form-field">
                     <label for="user-text" class="modal-label">Комментарий</label>
                     <textarea 
@@ -538,8 +538,10 @@
                         </div>
                 </div>
             </form>
+            
             <div class="modal-button">
                 <button type="submit" class="modal-btn">Отправить</button>
+            </div>
             </div>
         </div>
     </div>
